@@ -36,7 +36,7 @@ function cadastrarCliente() {
             camposEmBranco.push("Cidade");
         }
 
-        alert("Preencha todos os campos obrigatórios" + camposEmBranco);
+        alert("Preencha todos os campos obrigatórios " + camposEmBranco);
     }
 
 }
@@ -68,7 +68,7 @@ function adicionar() {
         botaoEnviarPedido.style.display = 'initial';
     }
     else {
-        console.log("Preencha os campos!");
+        alert("Preencha os campos, Bebida e Pizza!!!");
     }
 
 
