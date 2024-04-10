@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('C:\Users\Ana Flavia\Documents\MEGA\PROGRAMAÇÃO\PROJETOS REAIS\pedidos_delivery\fonts\Rockwell-Font\ROCK.TTF');
+}
+
+@font-face {
+    font-family: 'Rockwell-Bold';
+    src: url('C:\Users\Ana Flavia\Documents\MEGA\PROGRAMAÇÃO\PROJETOS REAIS\pedidos_delivery\fonts\Rockwell-Font\Rockwell-Bold.ttf');
+}
+
+:root{
+
+    /* COLORS */
+    --white: #FFF;
+    --orange: #FF6400;
+    --black: #000;
+    --placeholder: #D9D9D9;
+
+    /* FONTS */
+    --roboto: 'Roboto', sans-serif;
+    --rockwell: 'Rockwell', sans-serif;
+    --rockwell-bold: 'Rockwell-Bold', sans-serif;
+    --ribeye: 'Ribeye Marrow', serif;
+}
+
+body{
+    background-image: url("background-desktop-2.png");
+    /* background-repeat: no-repeat; */
+}
+
+/* ESTILIZAÇÃO DO "FAÇA SEU PEDIDO" */
+h1{
+    font-family: var(--roboto);
+    font-size: 170%;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-weight: 800;
+}
+
+span{
+    color: var(--orange);
+}
+
+legend{
+    font-family: var(--ribeye);
+    font-size: 150%;
+    font-weight: 800;
+}
+
+.info-titulo{
+    font-family: var(--roboto);
+    font-size: 120%;
+    font-weight: 800;
+}
+
+
+input{
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 2rem;
+    margin: .5rem 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+input::placeholder{
+    color: var(--placeholder);
+    font-family: var(--roboto);
+    font-size: 100%;
+}
+
+.item-pedido{
+    font-family: var(--roboto);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+select{
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 2rem;
+    margin: .5rem 2rem;
+    border-radius: 1rem;
+    font-family: var(--roboto);
+    font-size: 100%;
+    color: var(--placeholder);
+}
+
+button{
+    background-color: var(--orange);
+    border: var(--black) solid;
+    padding: .8rem 2rem;
+    margin: .5rem 2rem;
+    border-radius: 1rem;
+    font-family: var(--roboto);
+    font-size: 100%;
+    font-weight: 800;
+}
+
+button:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+option{
+    color: var(--black);
+}
+
+
+
+/* ESTILIZAÇÃO ASIDE */
+h2{
+    font-family: var(--ribeye);
+    font-size: 150%;
+    color: var(--orange);
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: 800;
+}
+
+p{
+    color: var(--white);
+    font-family: var(--ribeye);
+    margin: .5rem 3rem;
+}
+
+.button-aside{
+    display: none;
+}
+
+.button-aside:hover{
+    border-color: var(--orange);
+}
+
+.linhas{
+    width: 50%; 
+    color: var(--white); 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* POSICIONAMENTO */
+
+fieldset{
+    border: var(--black) solid .5rem;
+    text-align: center;
+    margin: 5rem;
+    width: 70%;
+    padding: 5%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+aside{
+    background-color: var(--black);
+    display: block;
+    width: 471px; /* Largura fixa */
+    height: 605px; /* Altura fixa */
+}
+
+.caixa-alta{
+    text-transform: uppercase;
+}
+
+.adicionar{
+    display: none;
+}
+
+@media(max-width: 470px){
+
+    /*FAÇA SEU PEDIDO*/
+    input{
+        padding: 4%;
+        margin: 2%;
+    }
+
+    select{
+        align-items: center;
+        padding: 4%;
+        margin: 2%;
+    }
+
+    button{
+        padding: 4%;
+        margin: 2% 0 4% 0;
+    }
+
+    fieldset{
+        text-align: center;
+        align-items: center;
+        margin: 8%;
+        width: 70%;
+        
+    }
+
+    /*ASIDE*/
+    aside{
+        background-color: var(--black);
+        display: block;
+        width: 360px; /* Largura fixa */
+        height: 500px; /* Altura fixa */
+        margin-bottom: 5rem;
+    }
+}
+
+@media(max-width: 360px){
+    aside{
+        width: 330px; /* Largura fixa */
+        height: 490px; /* Altura fixa */
+    }
+}

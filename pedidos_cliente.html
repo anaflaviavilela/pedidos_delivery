@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do Cliente - Pedidos</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pedidos_cliente/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/master.js" defer></script>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>PIZZARIA DA VILLA | <span>DELIVERY</span></h2>
+    </header>
+
+    <main>
+        <section>
+            <fieldset>
+                <legend>FAÇA SEU PEDIDO</legend>
+                <form action="" method="post"></form>
+
+                <!-- INFORMAÇÕES DO CLIENTE -->
+                <label class="info-titulo" for="">Informações do Cliente</label><br>
+                <input class="nome inputCadastro" type="text" name="nome" placeholder="Nome" id=""><br>
+
+                <input class="telefone inputCadastro" type="text" name="telefone" placeholder="Telefone" id=""><br>
+
+                <input class="endereco inputCadastro" type="text" name="endereco" placeholder="Endereço" id=""><br>
+
+                <input class="bairro inputCadastro" type="text" name="bairro" placeholder="Bairro" id=""><br>
+
+                <input class="cidade inputCadastro" type="text" name="cidade" placeholder="Cidade" id=""><br><br>
+
+                <div class="botoes-cadastro-editar">
+                    <button class="cadastrarCliente" onclick="cadastrarCliente()" type="button">Cadastrar</button>
+                </div>
+
+                <!-- INFORMAÇÕES DO PEDIDO -->
+                <label class="info-titulo" for="">Informações do Pedido</label><br>
+                <!-- PIZZA -->
+                    <select class="pizza pedido-input" name="" id="pizza">
+                        <option value="">Selecione a Pizza</option>
+                        <option value="Napolitana - R$ 32.99">Napolitana - R$ 32,99</option>
+                        <option value="Chilena - R$ 31.99">Chilena - R$ 31,99</option>
+                        <option value="Milho - R$ 29.99">Milho - R$ 29,99</option>
+                        <option value="Marguerita - R$ 34.99">Marguerita - R$ 34,99</option>
+                        <br>
+                    </select>
+                    
+                
+               <!-- BEDIDAS -->
+                    <select class="bebida pedido-input" name="" id="bebida">
+                        <option value="">Selecione a Bebida</option>
+                        <option value="Coca-Cola 2L - R$ 10.00">Coca-Cola 2L - R$ 10</option>
+                        <option value="Guaraná Antartica 2L - R$ 8">Guaraná Antartica 2L - R$ 8</option>
+                        <option value="Água 500ML - R$ 4">Água 500ML - R$ 4</option>
+                        <option value="Suco Uva - DelValle 1.5L - R$ 7">Suco Uva - DelValle 1.5L - R$ 7</option>
+                    </select>
+                    <br>
+               <button class="adicionar" onclick="adicionar()" type="button">Adicionar ao Pedido</button>
+            </fieldset>
+        </section>
+        <aside>
+            <h2>PEDIDO</h2>
+            <div class="cliente-pedido">
+
+            </div>
+            <button class="button-aside button-limpar" onclick="limparDados()" type="button">Limpar Dados</button>
+            <button class="button-aside button-enviar" onclick="enviarPedido()" type="submit">Enviar Pedido</button>
+        </aside>
+    </main>
+
+</body>
+</html>

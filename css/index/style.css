@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('C:\Users\Ana Flavia\Documents\MEGA\PROGRAMAÇÃO\PROJETOS REAIS\pedidos_delivery\fonts\Rockwell-Font\ROCK.TTF');
+}
+
+@font-face {
+    font-family: 'Rockwell-Bold';
+    src: url('C:\Users\Ana Flavia\Documents\MEGA\PROGRAMAÇÃO\PROJETOS REAIS\pedidos_delivery\fonts\Rockwell-Font\Rockwell-Bold.ttf');
+}
+
+:root{
+
+    /* COLORS */
+    --white: #FFF;
+    --orange: #FF6400;
+    --black: #000;
+
+    /* FONTS */
+    --roboto: 'Roboto', sans-serif;
+    --rockwell: 'Rockwell', sans-serif;
+    --rockwell-bold: 'Rockwell-Bold', sans-serif;
+
+}
+
+body{
+    background-image: url("desktop1.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header{
+    text-align: start;
+    margin-top: 1%;
+}
+
+h1{
+    font-family: var(--roboto);
+    font-size: 170%;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-weight: 800;
+}
+
+span{
+    color: var(--orange);
+}
+
+
+main{
+    margin-top: 15%;
+}
+
+button{
+    background-color: var(--orange);
+    padding: .8rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 2rem;
+}
+
+button:hover{
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 20px;
+}
+
+footer{
+    margin-top: 15%;
+}
+
+h4{
+    color: var(--black);
+    /* color: var(--white); */
+    font-family: var(--rockwell);
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 900px) {
+    main{
+        margin-top: 45%;
+    }
+    
+    footer{
+        margin-top: 50%;
+    }
+}
+
+
+@media (max-width: 360px){
+    h1{
+        font-size: 140%;
+        margin-left: 2%;
+    }
+    
+    main{
+        margin-top: 40%;
+    }
+
+    button{
+        margin: 1rem;
+    }
+    
+    footer{
+        margin-top: 50%;
+    }
+
+    img{
+        display: none;
+    }
+}
