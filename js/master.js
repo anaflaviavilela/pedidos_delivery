@@ -105,6 +105,7 @@ function limparDados() {
     botaoLimparDados.style.display = 'none';
     botaoEnviarPedido.style.display = 'none';
     botaoCadastrar.style.display = 'initial';
+    botaoLimparDados.textContent = 'Limpar Dados';
 
 }
 
