@@ -1,4 +1,4 @@
-# Projeto de Delivery de Pizza - Basico 1.0
+# Projeto de Delivery de Pizzaria - Basico 1.0
 
 ## Este projeto é uma aplicação web para facilitar a realização de pedidos de pizza online. Os clientes podem cadastrar-se, escolher seus sabores de pizza e bebidas, e enviar seus pedidos com facilidade.
 
